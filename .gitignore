@@ -7,7 +7,6 @@ yarn-error.log*
 
 # build 
 client/build/
-client/package-lock.json
 
 # Runtime data
 pids
