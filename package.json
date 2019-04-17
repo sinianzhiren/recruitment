@@ -1,0 +1,22 @@
+{
+  "name": "recruitment",
+  "version": "0.1.0",
+  "description": "react app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinianzhiren/recruitment.git"
+  },
+  "keywords": [
+    "recruitment"
+  ],
+  "author": "alex <sinianzhiren@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sinianzhiren/recruitment/issues"
+  },
+  "homepage": "https://github.com/sinianzhiren/recruitment#readme"
+}
