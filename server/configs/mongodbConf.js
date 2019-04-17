@@ -1,7 +1,11 @@
 const mongoose = require('mongoose')
 const mongodbConf = {
-    url: 'mongodb://localhost:27017/',
+    url: 'mongodb://127.0.0.1:4499/',
     dataBaseName: 'imooc',
+}
+
+if(process.argv[2] == '--development'){
+    mongodbConf.url = 'mongodb://localhost:27017/'
 }
 
 mongoose.connect(
