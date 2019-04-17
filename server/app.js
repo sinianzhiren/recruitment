@@ -7,6 +7,7 @@ const bodyparser = require('koa-bodyparser')
 const logger = require('koa-logger')
 const server = require('http').createServer(app.callback())
 const io = require('socket.io')(server)
+const path = require('path')
 
 const { getModel } = require('./models/User')
 const ChatModel = getModel('chat')
@@ -47,10 +48,11 @@ app.use(bodyparser({
 }))
 app.use(json())
 app.use(logger())
-app.use(require('koa-static')(__dirname + '/public'))
+app.use(require('koa-static')(path.resolve(__dirname, '../client/build')))
 
-app.use(views(__dirname + '/views', {
-  extension: 'pug'
+const indexViewsPath = path.resolve(__dirname, '../client/build')
+app.use(views(indexViewsPath, {
+  extension: 'html'
 }))
 
 // logger
