@@ -17,6 +17,7 @@ class User extends Component {
     constructor(props){
         super(props)
 
+        this.cancelBtn = { marginBottom: 50 }
         this.handleLogout = this.handleLogout.bind(this)
     }
 
@@ -55,7 +56,7 @@ class User extends Component {
                     </Item>
                 </List>
                 <WhiteSpace></WhiteSpace>
-                <List>
+                <List style={ this.cancelBtn }>
                     <Item onClick={ this.handleLogout }>退出登录</Item>
                 </List>
             </div>
