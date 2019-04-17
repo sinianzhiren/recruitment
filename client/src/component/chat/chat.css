@@ -1,0 +1,35 @@
+.am-button-small{
+    height: 30px;
+    line-height: 30px;
+}
+
+.am-list-item .am-input-extra{
+    max-height: 40px;
+}
+
+.am-list-item .am-list-line{
+    padding-right: 7px;
+}
+#chat-page{
+    height: 100vh;
+}
+#chat-page .am-grid-icon{
+    display: none;
+}
+
+.input-right{
+    display: flex;
+    vertical-align: middle;
+}
+
+.input-right p:first-child{
+    margin-right: 9px;
+}
+
+.input-right P:last-child{
+    margin: auto;
+}
+
+#chat-page .am-grid-text{
+    margin-top: 0;
+}
