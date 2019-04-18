@@ -1,7 +1,7 @@
 import axios from 'axios'
 import io from 'socket.io-client'
 
-const socket = io('ws://127.0.0.1:4000')
+const socket = io('ws://127.0.0.1:4400')
 // 消息列表
 const MSG_LIST = 'MSG_LIST'
 // 读取信息
